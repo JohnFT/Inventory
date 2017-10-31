@@ -1,0 +1,72 @@
+page-login {
+    ion-content{
+        background-color: #dc4444 !important;
+          .Header{
+            padding: 60px 0 60px 0;
+            h1{
+                color: white;
+                text-align: center;
+                font-size: 30px;
+                font-family: 'Baloo Paaji', cursive;
+                span{
+                    display: block;
+                }
+            }
+
+        }
+        .form{
+            padding: 0 20px 0 0;
+            .item-md{
+            background-color: transparent;
+                ion-label{
+                    color: white !important;
+                }
+                .item-inner{
+                    border-bottom: 1px solid #8a1c12;
+                    box-shadow: 0 -1px 0 0 #8a1c12 !important;
+                }
+            }
+        }
+       
+        .scroll-content{
+            padding: 40px !important;  
+        }
+        .btns{
+            padding: 20px;
+            button.btn-signIn {
+                border: none;
+                color: white;
+                font-size: 18px;
+                margin-bottom: 10px;
+                background: #da3737;
+            }
+            button.btn-google{
+                background-color: #d34836;
+                margin-bottom: 10px;
+            }
+            button.btn-register{
+                color: white;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.text-input::-moz-placeholder {
+    color: white;
+    font-size: 13px;
+    text-align: center;
+  }
+  
+  .text-input:-ms-input-placeholder {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .text-input::-webkit-input-placeholder {
+    text-indent: 0;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+  }

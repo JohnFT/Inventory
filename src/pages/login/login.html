@@ -1,0 +1,24 @@
+<ion-content padding>
+  <div class="Header">
+    <h1>
+      <ion-icon name="md-qr-scanner">
+      </ion-icon>
+      <span>Inventory</span>
+    </h1>
+  </div>
+  <div class="form">
+    <ion-item>
+      <ion-input type="text" placeholder='usuario'></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="password" placeholder='contraseña'></ion-input>
+    </ion-item>
+  </div>
+  <div class="btns">
+    <button ion-button block class="btn-signIn" (click)="signIn()">
+      <ion-icon name="log-in"></ion-icon>
+    </button>
+    <button ion-button block class="btn-google">Google</button>
+    <button ion-button block class="btn-register" clear>Nuevo User</button>
+  </div>
+</ion-content>
