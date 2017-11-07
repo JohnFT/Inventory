@@ -7,7 +7,7 @@ page-login {
                 color: white;
                 text-align: center;
                 font-size: 30px;
-                font-family: 'Baloo Paaji', cursive;
+                font-family: 'Baloo Paaji', cursive
                 span{
                     display: block;
                 }
@@ -16,7 +16,7 @@ page-login {
         }
         .form{
             padding: 0 20px 0 0;
-            .item-md{
+            .item-md,.item-ios{
             background-color: transparent;
                 ion-label{
                     color: white !important;
@@ -24,6 +24,12 @@ page-login {
                 .item-inner{
                     border-bottom: 1px solid #8a1c12;
                     box-shadow: 0 -1px 0 0 #8a1c12 !important;
+                }
+
+                input{
+                    font-family: 'Quicksand', sans-serif;
+                    color: white;
+                    font-size: 14;
                 }
             }
         }

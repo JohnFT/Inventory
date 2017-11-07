@@ -1,18 +1,55 @@
-<!--
-  Generated template for the ProfilePage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>Profile</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
 <ion-content padding>
+  <div class="head">
+    <ion-icon name="md-qr-scanner"></ion-icon>
+    <ion-avatar item-start>
+      <div class="images">
+        <div class="mask">
+          <img src="assets/images/profile.png">
+        </div>
+        <button>
+          <ion-icon name="md-camera"></ion-icon>
+        </button>
+      </div>
+      <label>
+        John Alexander Fonseca
+      </label>
+    </ion-avatar>
+  </div>
+  <div class="body">
+    <ion-segment [(ngModel)]="icons" color="secondary">
+      <ion-segment-button value="camera">
+        <ion-icon name="camera"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="bookmark">
+        <ion-icon name="bookmark"></ion-icon>
+      </ion-segment-button>
+    </ion-segment>
 
+    <ion-card>
+      <ion-card-header>
+        <button ion-item>
+          yo
+          <ion-icon name="create" item-end></ion-icon>
+        </button>
+      </ion-card-header>
+      <ion-list>
+        <button ion-item>
+          <ion-icon name="md-locate" item-start></ion-icon>
+          Bogotá
+        </button>
+        <button ion-item>
+          <ion-icon name="md-man" item-start></ion-icon>
+          22 años
+        </button>
+        <button ion-item>
+          <ion-icon name="md-heart-outline" item-start></ion-icon>
+          Soltero
+        </button>
+        <button ion-item>
+          <ion-icon name="mail" item-start></ion-icon>
+          Johnafonseca@gmail.com
+        </button>
+      </ion-list>
+    </ion-card>
+  </div>
 </ion-content>

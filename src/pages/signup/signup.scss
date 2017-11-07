@@ -1,0 +1,42 @@
+page-signup {
+    .toolbar-md{
+        .button-inner{
+            color: white;
+        }
+    }
+    .toolbar-background-md {
+        border-color: #861010;
+        background: #dc4444 !important;
+    }    
+    .toolbar-title-md{
+        color: white !important;
+        font-family: 'Baloo Paaji', cursive;
+    }
+    ion-content{
+        .scroll-content{
+            margin: 0;
+            padding-bottom: 0 !important;
+        }
+        .item-md{
+            background-color: transparent;
+            ion-label.label {
+                color: black;
+            }
+            .item-inner{
+                border-bottom: 1px solid #8a1c12;
+                box-shadow: 0 -1px 0 0 #8a1c12 !important;
+            }
+        }
+        .btns{
+            padding: 20px;
+            button.btn-signUp {
+                border: none;
+                color: white;
+                font-size: 14px;
+                margin-bottom: 10px;
+                background: #da3737;
+            }
+
+        }
+    }
+}

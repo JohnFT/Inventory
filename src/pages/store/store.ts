@@ -1,18 +1,23 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+
 @IonicPage()
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html',
+  selector: 'page-store',
+  templateUrl: 'store.html',
 })
-export class HomePage {
-
+export class StorePage {
+  
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad HomePage');
+    console.log('ionViewDidLoad PublishPage');
+  }
+
+  public add(): void {
+    this.navCtrl.push('AddStorePage');
   }
 
 }

@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Inventory
+      <ion-icon name="md-qr-scanner"></ion-icon>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <form class="form" (ngSubmit)="add(store)">
+    <ion-item>
+      <ion-label floating>Nombre Store:</ion-label>
+      <ion-input type="text" [(ngModel)]="store.Name" name='Name'></ion-input>
+    </ion-item>
+    <ion-item>
+      <p>{{imageURI}}</p>
+      <button ion-button color="secondary" (click)="getImage()">Get Image</button>
+    </ion-item>
+    <ion-item>
+      <h4>Image Preview</h4>
+      <img src="{{imageFileName}}" *ngIf="imageFileName" alt="Ionic File" width="300" />
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Description:</ion-label>
+      <ion-textarea [(ngModel)]="store.Description" name='Description'></ion-textarea>
+    </ion-item>
+    <button ion-button block class="btn-add" type="submit">
+      <ion-icon name="log-in"></ion-icon>
+    </button>
+  </form>
+</ion-content>

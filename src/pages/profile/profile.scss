@@ -1,3 +1,107 @@
 page-profile {
+    .scroll-content{
+        padding: 0 !important;
+    }
+    .head{
+        background-color: #dc4444;
+        border-bottom-color: #8a1c12;
+        height: 10rem;
+        padding: 20px;
+        position: relative;
+        ion-icon{
+            font-size: 25px;
+            color: white;        
+        }
+        ion-avatar, ion-thumbnail{
+            position: absolute;
+            bottom: -120px;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            display: block;
+            line-height: 1;
+            text-align: center;
+            display: block;
+            .images{
+                margin-bottom: 10px;
+                position: relative;
+                .mask{
+                    border: 3px solid white;
+                    box-shadow: 0px 1px 4px black;
+                    border-radius: 50%;
+                    width: 130px;
+                    height: 130px;
+                    margin: 0 auto;
+                    overflow: hidden;
+                    
+                    img{
+                        width: 100%;  
+                    }
+                }
+                button{
+                    background: rgb(38, 151, 71);
+                    border: none;
+                    position: absolute;
+                    right: 15px;
+                    bottom: -4px;
+                    color: white;
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50%;
+                    border: 1px solid white;
+                    font-size: 20px;
+                }
 
+            }
+           
+            label{
+                font-family: 'Quicksand', sans-serif;
+                font-size: 15px;
+            }
+            
+        }
+    }
+    .body{
+        margin-top: 120px;
+        .segment-md-secondary .segment-button.activated, 
+        .segment-md-secondary .segment-button.segment-activated,
+        .segment-ios-secondary .segment-button.segment-activated {
+            border: 0px;
+            border-bottom: 1px solid #dc4444;
+            color: #dc4444;
+            opacity: 1;
+            background-color: white;
+        }
+        .segment-md-secondary .segment-button,
+        .segment-ios-secondary .segment-button {
+            border: none;
+            border-bottom-width: 2px;
+            border-bottom-style: solid;
+            border-bottom-color: rgba(0, 0, 0, 0.1);
+            color: #dc4444;
+        }
+        ion-card{
+            button.item-ios:not([detail-none]) .item-inner{
+                background-image: url('');
+            }
+            ion-card-header{
+                font-family: 'Baloo Paaji', cursive;
+                font-size: 18px;
+                color: #3a3a3a;
+            }
+            ion-list{
+                button{
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: 14px;
+                    font-weight: 800;
+                    color: #3f3f3f;
+                    small{
+                        font-size: 14px;
+                        font-weight: 300;
+                    }
+
+                }
+            }
+        }
+    }
 }

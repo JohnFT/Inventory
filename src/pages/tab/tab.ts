@@ -19,6 +19,7 @@ export class TabPage {
   profileRoot = 'ProfilePage'
   findRoot = 'FindPage'
   catchRoot = 'CatchPage'
+  storeRoot = 'StorePage'
 
 
   constructor(public navCtrl: NavController) {}
